@@ -4,6 +4,7 @@ dist
 *.log
 *.lock
 .cache
+.parcel-cache
 package-lock.json
 
 #IDE
