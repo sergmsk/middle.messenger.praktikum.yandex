@@ -1,0 +1,20 @@
+<form id="{{ formName }}" name="{{ formName }}" class="form">
+  <section class="form-fields">
+    {{#each formData}}
+      {{#if this.isInput }}
+        {{> input }}
+      {{/if}}
+    {{/each}}
+  </section>
+  <section class="form-controls">
+    {{#each controls}}
+      {{#if this.isButton }}
+        {{> button }}
+        
+      {{else}}
+        {{> link }}
+        
+      {{/if}}
+    {{/each}}
+  </section>
+</form>
