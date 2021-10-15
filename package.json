@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "static/index.html",
   "scripts": {
-    "start": "parcel static/index.html -p 4000",
+    "start": "parcel static/index.html -p 3000",
     "build": "parcel build static/index.html",
     "server": "node server"
   },
