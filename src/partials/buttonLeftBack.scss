@@ -1,0 +1,13 @@
+.button-left-back {
+  display: flex;
+  height: 100vh;
+  //width: 64px;
+  padding: 0px;
+  margin: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--mediumGray);
+  color: var(--white);
+}

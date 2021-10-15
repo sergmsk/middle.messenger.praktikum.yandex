@@ -1,0 +1,21 @@
+<label class="input-field">
+  <span class="label">{{ this.label }}</span>
+  <input
+    class="input"
+    name="{{ this.name }}"
+    type="{{ this.type }}"
+    placeholder="{{ this.placeholder }}"
+    {{#if this.disabled }}
+      disabled="{{ this.disabled }}"
+    {{/if}}
+    {{#if this.value }}
+      value="{{ this.value }}"
+    {{/if}}
+  >
+  {{#if this.error }}
+    <span class="description description-error">{{ this.errorDescription }}</span>
+  {{/if}}
+  {{#if this.hint }}
+    <span class="description description-hint">{{ this.hintDescription }}</span>
+  {{/if}}
+</label>

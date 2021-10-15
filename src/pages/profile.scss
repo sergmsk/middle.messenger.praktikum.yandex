@@ -1,0 +1,24 @@
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .profile-name {
+    margin: 36px auto;
+  }
+
+  .profile-fealds {
+    width: 520px;
+  }
+
+  .profile-controls {
+    width: 520px;
+    
+    .link {
+      margin-bottom: 16px;
+    }
+  }
+}
+

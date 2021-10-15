@@ -1,0 +1,12 @@
+<button
+  type="{{ this.type }}"
+  class="button"
+  {{#if this.form }}
+    form="{{ this.form }}"
+  {{/if}}
+  {{#if this.disabled }}
+    disabled="{{ this.disabled }}"
+  {{/if}}
+>
+  {{ this.label }}
+</button>
