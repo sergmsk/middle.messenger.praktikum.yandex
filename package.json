@@ -1,7 +1,7 @@
 {
   "name": "messenger",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "static/index.html",
   "scripts": {
     "start": "parcel static/index.html -p 3000",
     "build": "parcel build static/index.html",
