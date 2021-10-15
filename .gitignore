@@ -1,0 +1,14 @@
+node_modules
+dist
+*.swp
+*.log
+*.lock
+.cache
+.parcel-cache
+package-lock.json
+
+#IDE
+.vscode
+
+#OS
+.DS_Store
