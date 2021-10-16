@@ -11,11 +11,12 @@
     "node": ">=12.x"
   },
   "devDependencies": {
+    "@inventory/parcel-plugin-handlebars": "^1.0.0",
     "express": "^4.17.1",
-    "parcel-plugin-handlebars": "^0.4.4"
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "parcel": "^2.0.0",
+    "parcel": "^2.0.0-nightly.801",
     "postcss": "^8.3.6",
     "sass": "^1.38.0"
   }
