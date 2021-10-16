@@ -6,6 +6,8 @@
 
 ## Команды NPM
 запуск проекта
+- Сборка dev версии `yarn start || npm run start` 
+- Сборка build `yarn build || npm run build` 
 
 ## Figma
 ссылка на макет
