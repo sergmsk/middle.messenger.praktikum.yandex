@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel static/index.html -p 3000",
-    "build": "parcel build static/index.html --no-source-maps --no-minify",
+    "build": "parcel build static/index.html --no-source-maps",
     "server": "node server"
   },
   "engines": {
