@@ -2,8 +2,8 @@
   "name": "messenger",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run clear && parcel static/index.html -p 3000 --no-cache",
-    "build": "npm run clear && parcel build static/index.html",
+    "start": "clear && parcel static/index.html -p 3000 --no-cache",
+    "build": "clear && parcel build static/index.html",
     "server": "node server",
     "clear": "rimraf dist .cache"
   },
