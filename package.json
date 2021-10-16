@@ -2,9 +2,10 @@
   "name": "messenger",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel static/index.html -p 3000",
+    "start": "npm run clear && parcel static/index.html -p 3000",
     "build": "parcel build static/index.html",
-    "server": "node server"
+    "server": "node server",
+    "clear": "rimraf dist .cache"
   },
   "engines": {
     "node": ">=12.x"
@@ -19,6 +20,7 @@
     "handlebars": "^4.7.7",
     "parcel": "^2.0.0-nightly.801",
     "postcss": "^8.3.6",
+    "rimraf": "^3.0.2",
     "sass": "^1.38.0"
   },
   "staticFiles": {
