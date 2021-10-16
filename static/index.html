@@ -19,7 +19,6 @@ pages:
     href: profile
     page: Профиль
 ---
-
 <!DOCTYPE html>
 <html lang="ru">
   {{> head }}
@@ -31,7 +30,7 @@ pages:
       <ul>
         {{#each pages}}
           <li>
-            <a class="link">{{page}}</a>
+            <a class="link" href="../src/pages/{{href}}.html">{{page}}</a>
           </li>
         {{/each}}
         </ul>
