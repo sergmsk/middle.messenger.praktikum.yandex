@@ -1,0 +1,38 @@
+html, body {
+  font-family: Inter;
+  font-size: var(--defaultSize);
+  font-family: sans-serif;
+  background-color: var(--lightGray);
+}
+
+.main-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  background-color: var(--white);
+}
+
+.section-wrapper {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 1px var(--gray);
+}
+
+.profile-wrapper {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
