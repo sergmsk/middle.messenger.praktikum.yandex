@@ -2,7 +2,8 @@
 
 ## Netlify
 ссылка
-https://jovial-liskov-e20de2.netlify.app/
+
+
 ## Команды NPM
 запуск проекта
 
