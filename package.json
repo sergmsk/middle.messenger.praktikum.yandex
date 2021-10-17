@@ -4,7 +4,7 @@
   "source": "static/index.html",
   "scripts": {
     "start": "clear && parcel static/index.html -p 3000 --no-cache",
-    "build": "parcel build static/index.html",
+    "build": "parcel build static/index.html --no-cache",
     "server": "node server",
     "clear": "rimraf dist .cache"
   },
