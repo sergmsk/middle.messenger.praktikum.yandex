@@ -1,24 +1,4 @@
----
-pages:
-  0:
-    href: 500
-    page: 500
-  1:
-    href: 404
-    page: 404
-  2: 
-    href: chat
-    page: Чат
-  3:
-    href: login
-    page: Вход
-  4:
-    href: registration
-    page: Регистрация
-  5:
-    href: profile
-    page: Профиль
----
+
 <!DOCTYPE html>
 <html lang="ru">
   {{> head }}
@@ -28,11 +8,11 @@ pages:
     {{> title text='Страницы' }}
     <nav class="navigation">
       <ul>
-        {{#each pages}}
+
           <li>
-            <a class="link" href="../src/pages/{{href}}.html">{{page}}</a>
+            <a class="link" href="../src/pages/404.html">404</a>
           </li>
-        {{/each}}
+
         </ul>
     </nav>
   </section>
