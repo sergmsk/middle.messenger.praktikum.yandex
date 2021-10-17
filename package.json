@@ -8,7 +8,7 @@
     "clear": "rimraf dist .cache"
   },
   "engines": {
-    "node": ">=12.x"
+    "node": "16.2.0"
   },
   "dependencies": {
     "@inventory/parcel-plugin-handlebars": "^1.0.0",
