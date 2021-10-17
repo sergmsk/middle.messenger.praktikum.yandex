@@ -2,7 +2,7 @@
 
 ## Netlify
 ссылка
-
+https://trusting-mestorf-7256ec.netlify.app/
 
 ## Команды NPM
 запуск проекта
