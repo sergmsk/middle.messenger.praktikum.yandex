@@ -3,6 +3,7 @@
 ## Netlify
 ссылка
 
+https://trusting-mestorf-7256ec.netlify.app/
 
 ## Команды NPM
 запуск проекта
@@ -15,3 +16,4 @@ https://www.figma.com/file/dZ5GXaeLcPHuLOEwHCXC8G/Chat-(Copy)?node-id=0%3A1
 
 ## PR
 ссылки на PR
+sprint_1 https://github.com/sergmsk/middle.messenger.praktikum.yandex/pull/1
