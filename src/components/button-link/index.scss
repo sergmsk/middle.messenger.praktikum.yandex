@@ -1,0 +1,25 @@
+.button-link {
+  border: 0;
+
+  color: var(--bdazzledBlue);
+  display: block;
+  font-size: var(--subtitle);
+  font-weight: bold;
+  margin: 0 auto 20px;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity var(--defaultTransition);
+
+  will-change: opacity;
+
+  &:hover,
+  &:focus-within {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  &.red {
+    color: var(--redPigment);
+  }
+}
