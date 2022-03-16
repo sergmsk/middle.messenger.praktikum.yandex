@@ -1,31 +1,7 @@
-import ButtonLink from '../../components/button-link';
-import Title from '../../components/title/';
-import state from '../../js/storage/state';
-import createElement from "../../js/utils/createElement";
+import { withRouter } from '../../utils/Router';
 
-const localState = state._500;
-const wrapper = createElement('section', null, []);
+import { _500 } from './500';
 
-const title = new Title({
-  label: localState.label,
-  extendClass: localState.extendClass,
-}).render();
+export { _500 } from './500';
 
-const subTitle = new Title({
-  label: localState.subLabel,
-}).render();
-
-const link = new ButtonLink(localState.link).render();
-
-const template = `
-  ${title}
-  ${subTitle}
-  ${link}
-`;
-
-wrapper.insertAdjacentHTML(
-  'afterbegin',
-  template,
-);
-
-export default wrapper.outerHTML;
+export default withRouter(_500);

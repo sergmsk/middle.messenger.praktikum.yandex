@@ -4,33 +4,39 @@
   height: 200px;
 
   margin-bottom: 30px;
-  transition: background-color var(--defaultTransition);
+  position: relative;
+  transition: background-color var(--defaultTransition), opacity var(--defaultTransition);
   width: 200px;
 
-  will-change: background-color;
+  will-change: background-color, opacity;
 
-  &:hover,
-  &:focus-within {
-    background-color: var(--davysGrey);
-    cursor: pointer;
-    position: relative;
+  &:not(&--disabled) {
+    &:hover,
+    &:focus-within {
+      background-color: var(--davysGrey);
+      cursor: pointer;
+      opacity: 0.7;
 
-    &::after {
-      align-items: center;
-      bottom: 0;
-      color: var(--silverSand);
+      &::after {
+        align-items: center;
+        bottom: 0;
+        color: var(--silverSand);
 
-      content: 'Изменить';
-      display: flex;
-      font-size: 24px;
-      justify-content: center;
-      left: 0;
-      position: absolute;
-      right: 0;
+        content: 'Изменить';
+        display: flex;
+        font-size: 24px;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        right: 0;
 
-      text-align: center;
-
-      top: 0;
+        text-align: center;
+        top: 0;
+      }
     }
   }
+}
+
+.image-uploader {
+  display: none;
 }

@@ -1,0 +1,1 @@
+export { ChatOpened as default } from './chat-opened';

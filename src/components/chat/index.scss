@@ -13,6 +13,10 @@
 
   width: 100%;
 
+  * {
+    pointer-events: none;
+  }
+
   &:first-child {
     border-top: 1px solid var(--silverSand);
   }

@@ -1,14 +1,1 @@
-import DefaultComponent from '../../js/utils/default-component';
-
-import template from './index.tmpl';
-
-export default class ButtonSend extends DefaultComponent {
-  constructor(props: { [key: string]: unknown }) {
-    super('div', props);
-    this.props = props;
-  }
-
-  render(): string {
-    return this._compile(template(), this.props);
-  }
-}
+export { ButtonSend as default } from './button-send';
