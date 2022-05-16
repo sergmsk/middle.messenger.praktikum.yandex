@@ -1,0 +1,9 @@
+.title {
+  font-size: var(--title);
+  font-weight: bold;
+  text-align: center;
+
+  &--big {
+    font-size: 72px;
+  }
+}

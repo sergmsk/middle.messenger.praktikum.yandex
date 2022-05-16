@@ -1,0 +1,1 @@
+export { InputSearch as default } from './input-search';

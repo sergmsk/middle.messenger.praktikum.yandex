@@ -1,0 +1,31 @@
+.button {
+
+  background-color: var(--bdazzledBlue);
+  border: 0;
+  color: var(--white);
+  font-size: var(--subtitle);
+  font-weight: bold;
+  margin: 0 auto 20px;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity var(--defaultTransition);
+
+  will-change: opacity;
+
+  &:hover,
+  &:focus-within {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  &:disabled {
+    background-color: var(--silverSand);
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus-within {
+      opacity: 1;
+    }
+  }
+}

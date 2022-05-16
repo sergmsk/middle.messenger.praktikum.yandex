@@ -1,0 +1,24 @@
+.input-search {
+  border: 1px solid var(--lightGray);
+
+  box-sizing: border-box;
+  color: var(--black);
+
+  font-size: var(--subtitle);
+  outline: 1px solid transparent;
+
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--silverSand);
+    font-size: var(--description);
+    font-weight: 200;
+  }
+
+  &:focus {
+    outline: 1px solid var(--bdazzledBlue);
+    text-align: left;
+  }
+}
