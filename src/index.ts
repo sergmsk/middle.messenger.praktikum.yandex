@@ -1,4 +1,6 @@
-require("babel-polyfill");
+require('babel-polyfill');
+
+import '../static/css/index.scss';
 
 import AuthController from './controllers/AuthController';
 import _404 from './pages/404';
@@ -10,13 +12,40 @@ import ProfilePage from './pages/profile';
 import EditDataPage from './pages/profile/edit-data';
 import EditPasswordPage from './pages/profile/edit-password';
 import SignUpPage from './pages/signup';
-import Block from './utils/Block';
 import registerComponent, { BlockConstructable } from './utils/RegisterComponent';
 import Router from './utils/Router';
 
-const components = require('./components/**/index.ts') as {[key: string]: { default: Block }};
+import Avatar from './components/avatar';
+import Button from './components/button';
+import ButtonBack from './components/button-back';
+import ButtonSend from './components/button-send';
+import ButtonUser from './components/button-user';
+import Chat from './components/chat';
+import ChatOpened from './components/chat-opened';
+import Input from './components/input';
+import InputSearch from './components/input-search';
+import Link from './components/link';
+import Message from './components/message';
+import Modal from './components/modal';
+import Title from './components/title';
 
-Object.values(components).forEach(component => registerComponent(component.default as unknown as BlockConstructable));
+const components = [
+  Avatar,
+  Button,
+  ButtonBack,
+  ButtonSend,
+  ButtonUser,
+  Chat,
+  ChatOpened,
+  Input,
+  InputSearch,
+  Link,
+  Message,
+  Modal,
+  Title,
+];
+
+Object.values(components).forEach(component => registerComponent(component as unknown as BlockConstructable));
 
 AuthController.fetchUser()
   .then(() => {

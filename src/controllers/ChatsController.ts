@@ -1,4 +1,4 @@
-import { ChatsAPI, ChatData, createChatProps, addUsersInChatProps, ChatTokenData, ChatTokenResponse, ChatMessage } from '../api/ChatsAPI';
+import { ChatsAPI, ChatData, CreateChatProps, addUsersInChatProps, ChatTokenData, ChatTokenResponse, ChatMessage } from '../api/ChatsAPI';
 import { store } from '../store';
 import { setChats, setSelectedChat, addMessage } from '../store/chats';
 import isArray from '../utils/helpers/isArray';
@@ -11,7 +11,7 @@ class ChatsController {
     this.api = new ChatsAPI();
   }
 
-  async createChat(data: createChatProps) {
+  async createChat(data: CreateChatProps) {
     try {
       await this.api.createChat(data);
     } catch (e) {

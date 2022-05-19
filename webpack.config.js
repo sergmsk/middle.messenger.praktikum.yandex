@@ -63,10 +63,6 @@ module.exports = {
           from: path.resolve(__dirname, 'static', 'image'),
           to: './image',
         },
-        {
-          from: path.resolve(__dirname, 'static', 'favicons'),
-          to: './favicons',
-        },
       ],
     }),
   ],
