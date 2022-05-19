@@ -14,7 +14,7 @@ export interface ChatData {
   messages?: ChatMessage[];
 }
 
-export interface createChatProps {
+export interface CreateChatProps {
   title: string;
 }
 
@@ -55,7 +55,7 @@ export class ChatsAPI extends BaseAPI {
     super('/chats');
   }
 
-  createChat(data: createChatProps): Promise<void> {
+  createChat(data: CreateChatProps): Promise<void> {
     return this.http.post('', data);
   }
 
