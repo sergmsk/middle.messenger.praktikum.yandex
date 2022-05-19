@@ -1,20 +1,5 @@
 require('babel-polyfill');
 
-import '../static/css/index.scss';
-
-import AuthController from './controllers/AuthController';
-import _404 from './pages/404';
-import _500 from './pages/500';
-import HomePage from './pages/home';
-import LoginPage from './pages/login';
-import MessengerPage from './pages/messenger';
-import ProfilePage from './pages/profile';
-import EditDataPage from './pages/profile/edit-data';
-import EditPasswordPage from './pages/profile/edit-password';
-import SignUpPage from './pages/signup';
-import registerComponent, { BlockConstructable } from './utils/RegisterComponent';
-import Router from './utils/Router';
-
 import Avatar from './components/avatar';
 import Button from './components/button';
 import ButtonBack from './components/button-back';
@@ -28,6 +13,20 @@ import Link from './components/link';
 import Message from './components/message';
 import Modal from './components/modal';
 import Title from './components/title';
+import AuthController from './controllers/AuthController';
+import _404 from './pages/404';
+import _500 from './pages/500';
+import HomePage from './pages/home';
+import LoginPage from './pages/login';
+import MessengerPage from './pages/messenger';
+import ProfilePage from './pages/profile';
+import EditDataPage from './pages/profile/edit-data';
+import EditPasswordPage from './pages/profile/edit-password';
+import SignUpPage from './pages/signup';
+import registerComponent, { BlockConstructable } from './utils/RegisterComponent';
+import Router from './utils/Router';
+
+import '../static/css/index.scss';
 
 const components = [
   Avatar,
