@@ -1,1 +1,1 @@
-declare module 'handlebars/dist/handlebars';
+declare module 'handlebars';
